@@ -1,0 +1,22 @@
+{
+  "name": "generate-types",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "substrate-exec-tsc",
+    "start": "yarn build && node ./build/index.js",
+    "lint": "substrate-dev-run-lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "yarn@3.2.1",
+  "dependencies": {
+    "@polkadot/apps-config": "^0.118.1",
+    "argparse": "^2.0.1"
+  },
+  "devDependencies": {
+    "@substrate/dev": "^0.6.3"
+  }
+}
