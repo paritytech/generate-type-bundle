@@ -14,9 +14,11 @@
   "packageManager": "yarn@3.2.1",
   "dependencies": {
     "@polkadot/apps-config": "^0.118.1",
+    "@polkadot/types": "^8.14.1",
     "argparse": "^2.0.1"
   },
   "devDependencies": {
-    "@substrate/dev": "^0.6.3"
+    "@substrate/dev": "^0.6.3",
+    "@types/argparse": "^2.0.10"
   }
 }
