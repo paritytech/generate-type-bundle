@@ -16,8 +16,8 @@ export const argv = () => {
                 type: 'string',
                 demandOption: true,
             },
-            'c': {
-                alias: 'chain',
+            's': {
+                alias: 'specName',
                 description: 'A chain to generate types for. If this is not inputted it will create a types bundle for all chains.',
                 type: 'string',
                 demandOption: false,
