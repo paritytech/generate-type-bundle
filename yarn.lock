@@ -2369,13 +2369,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/argparse@npm:^2.0.10":
-  version: 2.0.10
-  resolution: "@types/argparse@npm:2.0.10"
-  checksum: 6f74560fa300f69ecae339fcb89e82cff0193ba643c05b98b3866e0c7b0dc099aa53821a109bab3c33d48150bd4da9a95b3e186f09de081f2d78e7c005cd8dc1
-  languageName: node
-  linkType: hard
-
 "@types/babel__core@npm:^7.0.0, @types/babel__core@npm:^7.1.14":
   version: 7.1.19
   resolution: "@types/babel__core@npm:7.1.19"
@@ -4176,8 +4169,7 @@ __metadata:
     "@polkadot/apps-config": ^0.118.1
     "@polkadot/types": ^8.14.1
     "@substrate/dev": ^0.6.3
-    "@types/argparse": ^2.0.10
-    argparse: ^2.0.1
+    yargs: ^17.5.1
   languageName: unknown
   linkType: soft
 
