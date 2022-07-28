@@ -2,7 +2,7 @@ import fs from 'fs';
 import * as apps from "@polkadot/apps-config/api";
 import type { OverrideBundleDefinition } from '@polkadot/types/types';
 
-import { parseArgs } from './cli';
+import { argv } from './cli';
 
 enum ExitCodes {
     Success = 0,
@@ -24,9 +24,8 @@ const writeJson = (path: string, data: { spec: Record<string, OverrideBundleDefi
 
 const main = (): number => {
     const { Success } = ExitCodes;
-    const args = parseArgs();
     const specs = apps.typesBundle.spec;
-
+    const args = argv();
     /**
      * This is an unusual case, but necessary for the typescript compiler. There are rare cases where this might come back
      * undefined when using a very old version of apps-config.
@@ -34,13 +33,24 @@ const main = (): number => {
     if (!specs) {
         throw Error('Specs from apps-config is undefined, there are no types-bundles available');
     }
-
-    if (args.availableChains) {
+    /**
+     * Should exit the program when availableChains flag is called.
+     * It will list all the available chains from apps-config.
+     */
+    if (args.a) {
         availableChainTypes(specs);
         return Success;
     }
+    /**
+     * Set the path in which we will generate the files in.
+     */
+    let path = args.p;
+    const exists = fs.existsSync(path);
+    if (!exists) throw Error('The inputted path does not exist.');
+    const isDir = fs.lstatSync(path).isDirectory();
+    if (!isDir) throw Error('Please input a correct path. Inputted path is not a directory.');
 
-    writeJson(__dirname + '/../typesBundle.json', { spec: specs });
+    writeJson(path + '/typesBundle.json', { spec: specs });
 
     return Success;
 }
