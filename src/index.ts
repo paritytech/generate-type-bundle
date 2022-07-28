@@ -44,13 +44,23 @@ const main = (): number => {
     /**
      * Set the path in which we will generate the files in.
      */
-    let path = args.p;
+    const path = args.p;
     const exists = fs.existsSync(path);
     if (!exists) throw Error('The inputted path does not exist.');
     const isDir = fs.lstatSync(path).isDirectory();
     if (!isDir) throw Error('Please input a correct path. Inputted path is not a directory.');
+    /**
+     * Create the structure of the data for the types bundle
+     */
+    let typesBundle = { spec: specs };
+    if (args.s) {
+        if (!specs[args.s]) throw Error('The inputted chain name does not exist within apss-config.');
+        const updatedBundle = { spec: {} };
+        updatedBundle.spec[args.s] = specs[args.s];
+        typesBundle = updatedBundle;
+    }
 
-    writeJson(path + '/typesBundle.json', { spec: specs });
+    writeJson(path + '/typesBundle.json', typesBundle);
 
     return Success;
 }
