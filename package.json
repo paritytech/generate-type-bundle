@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "substrate-exec-tsc",
+    "build": "substrate-exec-rimraf build/ && substrate-exec-tsc && echo Build Finished",
     "start": "yarn build && node ./build/src/index.js",
     "lint": "substrate-dev-run-lint"
   },
