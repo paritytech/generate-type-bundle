@@ -1232,7 +1232,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@polkadot/networks@npm:10.1.1, @polkadot/networks@npm:^10.0.2, @polkadot/networks@npm:^10.1.1":
+"@polkadot/networks@npm:10.1.1":
   version: 10.1.1
   resolution: "@polkadot/networks@npm:10.1.1"
   dependencies:
@@ -1280,6 +1280,17 @@ __metadata:
     "@polkadot/util": 9.7.2
     "@substrate/ss58-registry": ^1.23.0
   checksum: b9fb80eaf2851da2c00dded072402c717cbfa6549f65cf57a35dea90a2e69281e781fd2a605720820bd5b752027085b49a102357482e795b8ae4a974cb2cbd50
+  languageName: node
+  linkType: hard
+
+"@polkadot/networks@npm:^10.0.2, @polkadot/networks@npm:^10.1.1":
+  version: 10.1.2
+  resolution: "@polkadot/networks@npm:10.1.2"
+  dependencies:
+    "@babel/runtime": ^7.18.9
+    "@polkadot/util": 10.1.2
+    "@substrate/ss58-registry": ^1.25.0
+  checksum: 030fbd6ba97b0a05e835d94b8977508d512c1db9fba074902dd08737c73e93ea6d7aff7f703d5bd1a226d2db815169f0ed5a0bf523ab394fd87811a00dbdce8c
   languageName: node
   linkType: hard
 
@@ -1691,7 +1702,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@polkadot/util@npm:10.1.1, @polkadot/util@npm:^10.0.2, @polkadot/util@npm:^10.1.1":
+"@polkadot/util@npm:10.1.1":
   version: 10.1.1
   resolution: "@polkadot/util@npm:10.1.1"
   dependencies:
@@ -1703,6 +1714,21 @@ __metadata:
     "@types/bn.js": ^5.1.0
     bn.js: ^5.2.1
   checksum: 360b29bd70315c354742605b0f461416d23a9971e3af7cd80d11c9a49c020b7834ebf6e2a3064f2e120c274f0844b1f56ed13ce1e963c58c7255d04f9f666516
+  languageName: node
+  linkType: hard
+
+"@polkadot/util@npm:10.1.2, @polkadot/util@npm:^10.0.2, @polkadot/util@npm:^10.1.1":
+  version: 10.1.2
+  resolution: "@polkadot/util@npm:10.1.2"
+  dependencies:
+    "@babel/runtime": ^7.18.9
+    "@polkadot/x-bigint": 10.1.2
+    "@polkadot/x-global": 10.1.2
+    "@polkadot/x-textdecoder": 10.1.2
+    "@polkadot/x-textencoder": 10.1.2
+    "@types/bn.js": ^5.1.0
+    bn.js: ^5.2.1
+  checksum: fd76295cc1d3cda17beff019074fc7e6eff74b4563d28a028e48a4b714592f1ab9f979b6d14245d3bec45a4318972834f0c5842f1f906611dd2ce228842e4899
   languageName: node
   linkType: hard
 
@@ -1918,13 +1944,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@polkadot/x-bigint@npm:10.1.1, @polkadot/x-bigint@npm:^10.1.1":
+"@polkadot/x-bigint@npm:10.1.1":
   version: 10.1.1
   resolution: "@polkadot/x-bigint@npm:10.1.1"
   dependencies:
     "@babel/runtime": ^7.18.9
     "@polkadot/x-global": 10.1.1
   checksum: 81d565ecc95b68cd37ce90b94049f35a3f9dda19e3d97497d7c615a793dd4cfe075ad0ac505332f738888cb97b8d4ac55160dfe736b528ced1e08f49bbac7634
+  languageName: node
+  linkType: hard
+
+"@polkadot/x-bigint@npm:10.1.2, @polkadot/x-bigint@npm:^10.1.1":
+  version: 10.1.2
+  resolution: "@polkadot/x-bigint@npm:10.1.2"
+  dependencies:
+    "@babel/runtime": ^7.18.9
+    "@polkadot/x-global": 10.1.2
+  checksum: b7108a0337f8421319a1f05e8602370d31223eba2d4ebf66bf78164a407a00d1e41bf45b6735a3b859e0a8457e4431ef1dd99db3c0031a3e1611d8ab13c6a588
   languageName: node
   linkType: hard
 
@@ -1949,14 +1985,14 @@ __metadata:
   linkType: hard
 
 "@polkadot/x-fetch@npm:^10.0.2, @polkadot/x-fetch@npm:^10.1.1":
-  version: 10.1.1
-  resolution: "@polkadot/x-fetch@npm:10.1.1"
+  version: 10.1.2
+  resolution: "@polkadot/x-fetch@npm:10.1.2"
   dependencies:
     "@babel/runtime": ^7.18.9
-    "@polkadot/x-global": 10.1.1
+    "@polkadot/x-global": 10.1.2
     "@types/node-fetch": ^2.6.2
     node-fetch: ^3.2.9
-  checksum: a953b309fc97b4f766226c00f6e1d6e82cd1e2ff7a2bdf5f614162737139e2db1ae7b568757c533ff001fffef9f19e72cac34bf0e51831234ec5da956dd18ff9
+  checksum: 78abb48306e35487bbdeee7d2df21e7b56dbc19f7f40244590d63a372bd27ed79665ebecaaeb519bc3dda4907b71e198b518649d15532e41c2314f98ccbba1dd
   languageName: node
   linkType: hard
 
@@ -1972,12 +2008,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@polkadot/x-global@npm:10.1.1, @polkadot/x-global@npm:^10.1.1":
+"@polkadot/x-global@npm:10.1.1":
   version: 10.1.1
   resolution: "@polkadot/x-global@npm:10.1.1"
   dependencies:
     "@babel/runtime": ^7.18.9
   checksum: bc928fc10ff1e12694fbec68ecca129169397b326dd4aaaf0342bd7be198a0f2907a232ce33b3ad2ca06d9c54e6e8d9190e1fef12696111d98ead53882e144fa
+  languageName: node
+  linkType: hard
+
+"@polkadot/x-global@npm:10.1.2, @polkadot/x-global@npm:^10.1.1":
+  version: 10.1.2
+  resolution: "@polkadot/x-global@npm:10.1.2"
+  dependencies:
+    "@babel/runtime": ^7.18.9
+  checksum: b6e1db20c3e38d939429ffaddb1b78dc354ac992e0b0a4fb66df34c88e2022973ded47451705552f455e75a528cf24adc8d8aae4b1bb5ac21a615693ba86da9c
   languageName: node
   linkType: hard
 
@@ -2087,6 +2132,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@polkadot/x-textdecoder@npm:10.1.2":
+  version: 10.1.2
+  resolution: "@polkadot/x-textdecoder@npm:10.1.2"
+  dependencies:
+    "@babel/runtime": ^7.18.9
+    "@polkadot/x-global": 10.1.2
+  checksum: 252d03ad20f4945638fdac443874965d19c034f91704803a72bd739eedf01dd37ac24381a9d7595fed64ef2d2d30c98067f440c177cd114b7ec812c3c45a0550
+  languageName: node
+  linkType: hard
+
 "@polkadot/x-textdecoder@npm:6.11.1":
   version: 6.11.1
   resolution: "@polkadot/x-textdecoder@npm:6.11.1"
@@ -2134,6 +2189,16 @@ __metadata:
     "@babel/runtime": ^7.18.9
     "@polkadot/x-global": 10.1.1
   checksum: 528e768ca9b28b73b2564c0140aa9473492f30f2580c70b4ad549de34460271030b8cd24a93f567f982222705c0fca58cccf0fec3ace3f8191e292f5d5701794
+  languageName: node
+  linkType: hard
+
+"@polkadot/x-textencoder@npm:10.1.2":
+  version: 10.1.2
+  resolution: "@polkadot/x-textencoder@npm:10.1.2"
+  dependencies:
+    "@babel/runtime": ^7.18.9
+    "@polkadot/x-global": 10.1.2
+  checksum: ac53acfa931f55508b345a35a5d8e626195e92faeecf1706582ac9f7d3c0773cfb0a06aae4523c3408e3a29b1423b4fec279ab3b356a082c3a189ebf58997053
   languageName: node
   linkType: hard
 
@@ -2348,7 +2413,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@substrate/ss58-registry@npm:^1.17.0, @substrate/ss58-registry@npm:^1.23.0, @substrate/ss58-registry@npm:^1.24.0":
+"@substrate/ss58-registry@npm:^1.17.0, @substrate/ss58-registry@npm:^1.23.0, @substrate/ss58-registry@npm:^1.24.0, @substrate/ss58-registry@npm:^1.25.0":
   version: 1.25.0
   resolution: "@substrate/ss58-registry@npm:1.25.0"
   checksum: 87f6e29702154ace790489342a1157afd9b855bd79a5061472564fb0843addfe0c11c8cc46c7a35fddd5106bce8c1c9a9cace19822185ae5a1975f0f7504b9be
