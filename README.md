@@ -24,7 +24,7 @@ Options:
 
 Note: `-p` or `--path` is required.
 
-### Examples
+### Example CLI usage
 
 `-p` or `--path`:
 
