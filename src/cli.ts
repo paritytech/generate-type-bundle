@@ -1,28 +1,23 @@
 import yargs from 'yargs';
 
+import packageJSON from '../package.json';
+
 export interface ArgsType {
 	[x: string]: unknown;
-	v: number | undefined;
-	p: string;
-	s: string | undefined;
+	p?: string;
+	s?: string;
 	a: unknown;
 	_: (string | number)[];
 	$0: string;
 }
 
 export const argv = (): ArgsType => {
-	return yargs.version(false).options({
-		v: {
-			alias: 'version',
-			description: 'Version of the current package.',
-			type: 'number',
-			demandOption: false,
-		},
+	return yargs.version(packageJSON.version).options({
 		p: {
 			alias: 'path',
 			description: 'Path to directory to generate Type files into.',
 			type: 'string',
-			demandOption: true,
+			demandOption: false,
 		},
 		s: {
 			alias: 'specName',

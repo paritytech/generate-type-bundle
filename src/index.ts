@@ -44,7 +44,7 @@ const createTypesBundle = (
 };
 
 const setPath = (args: ArgsType): string => {
-	const path = args.p;
+	const path = args.p as string;
 	const exists = fs.existsSync(path);
 	if (!exists) throw Error('The inputted path does not exist.');
 	const isDir = fs.lstatSync(path).isDirectory();
@@ -57,7 +57,7 @@ const setPath = (args: ArgsType): string => {
 };
 
 const main = (): number => {
-	const { Success } = ExitCodes;
+	const { Success, Failure } = ExitCodes;
 	const specs = apps.typesBundle.spec;
 	const args = argv();
 	/**
@@ -79,6 +79,16 @@ const main = (): number => {
 		return Success;
 	}
 	/**
+	 * Check if the -p or --path flag is inputted. We bypass the yargs library in order to ensure we can use other flags
+	 * if needed.
+	 */
+	if (!args.p) {
+		console.log(
+			'Please input a path using the `-p` or `--path` flag as it is required.'
+		);
+		return Failure;
+	}
+	/**
 	 * Set the path in which we will generate the files in.
 	 */
 	const path = setPath(args);
@@ -94,4 +104,16 @@ const main = (): number => {
 	return Success;
 };
 
-main();
+(function () {
+	const m = main();
+
+	if (m === 0) {
+		console.log('Succesfully generated your types bundle. Exiting.');
+		process.exit(0);
+	} else if (m === 1) {
+		console.log(
+			'There seemed to be a problem when generating your types bundle. Consult the above errors. Exiting.'
+		);
+		process.exit(1);
+	}
+})();
