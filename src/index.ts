@@ -14,7 +14,7 @@ enum ExitCodes {
 
 const writeJson = (path: string, data: OverrideBundleType): void => {
 	fs.writeFile(path, JSON.stringify(data, null, 2), (err) => {
-		if (err) console.log(err);
+		if (err) throw err;
 	});
 };
 
@@ -91,22 +91,38 @@ const main = (): number => {
 	/**
 	 * Set the path in which we will generate the files in.
 	 */
-	const path = setPath(args);
+	let path;
+	try {
+		path = setPath(args);
+	} catch (e) {
+		console.log(e)
+		return Failure;
+	}
 	/**
 	 * Create the data for the types bundle.
 	 */
-	const typesBundle = createTypesBundle(args, specs);
+	let typesBundle;
+	try {
+		typesBundle = createTypesBundle(args, specs);
+	} catch (e) {
+		console.log(e);
+		return Failure;
+	}
 	/**
 	 * Write the JSON file for the types bundle.
 	 */
-	writeJson(path + '/typesBundle.json', typesBundle);
+	try {
+		writeJson(path + '/typesBundle.json', typesBundle);
+	} catch (e) {
+		console.log(e);
+		return Failure;
+	}
 
 	return Success;
 };
 
 (function () {
 	const m = main();
-
 	if (m === 0) {
 		console.log('Succesfully generated your types bundle. Exiting.');
 		process.exit(0);
