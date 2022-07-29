@@ -2393,6 +2393,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@substrate/generate-type-bundle@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@substrate/generate-type-bundle@workspace:."
+  dependencies:
+    "@polkadot/apps-config": ^0.118.1
+    "@polkadot/types": ^8.14.1
+    "@substrate/dev": ^0.6.3
+    yargs: ^17.5.1
+  languageName: unknown
+  linkType: soft
+
 "@substrate/smoldot-light@npm:0.6.25":
   version: 0.6.25
   resolution: "@substrate/smoldot-light@npm:0.6.25"
@@ -4226,17 +4237,6 @@ __metadata:
   checksum: 788b6bfe52f1dd8e263cda800c26ac0ca2ff6de0b6eee2fe0d9e3abf15e149b651bd27bf5226be10e6e3edb5c4e5d5985a5a1a98137e7a892f75eff76467ad2d
   languageName: node
   linkType: hard
-
-"generate-types@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "generate-types@workspace:."
-  dependencies:
-    "@polkadot/apps-config": ^0.118.1
-    "@polkadot/types": ^8.14.1
-    "@substrate/dev": ^0.6.3
-    yargs: ^17.5.1
-  languageName: unknown
-  linkType: soft
 
 "gensync@npm:^1.0.0-beta.2":
   version: 1.0.0-beta.2
@@ -6890,7 +6890,7 @@ __metadata:
 
 "typescript@patch:typescript@4.7.4#~builtin<compat/typescript>, typescript@patch:typescript@^4.4.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.7.4#~builtin<compat/typescript>":
   version: 4.7.4
-  resolution: "typescript@patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=7ad353"
+  resolution: "typescript@patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=f456af"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver

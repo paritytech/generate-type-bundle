@@ -1,5 +1,5 @@
 {
-  "name": "generate-types",
+  "name": "@substrate/generate-type-bundle",
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
@@ -11,7 +11,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "yarn@3.2.1",
+  "packageManager": "yarn@3.2.2",
   "dependencies": {
     "@polkadot/apps-config": "^0.118.1",
     "@polkadot/types": "^8.14.1",
