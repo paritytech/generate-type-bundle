@@ -1,6 +1,16 @@
 import yargs from 'yargs';
 
-export const argv = () => {
+export interface ArgsType {
+    [x: string]: unknown;
+    v: number | undefined;
+    p: string;
+    s: string | undefined;
+    a: unknown;
+    _: (string | number)[];
+    $0: string;
+}
+
+export const argv = (): ArgsType => {
     return yargs
         .version(false)
         .options({
