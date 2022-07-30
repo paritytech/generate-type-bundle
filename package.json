@@ -8,6 +8,14 @@
     "start": "yarn build && node ./build/src/index.js",
     "lint": "substrate-dev-run-lint"
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "files": ["./build/**/*"],
+  "engines": {
+    "node": ">=14"
+  },
   "bin": {
     "generate-type-bundle": "./build/src/index.js"
   },
