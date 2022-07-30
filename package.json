@@ -8,6 +8,9 @@
     "start": "yarn build && node ./build/src/index.js",
     "lint": "substrate-dev-run-lint"
   },
+  "bin": {
+    "generate-type-bundle": "./build/src/index.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
