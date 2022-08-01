@@ -12,20 +12,20 @@
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
-  "files": ["./build/**/*"],
+  "files": [
+    "./build/**/*"
+  ],
   "engines": {
     "node": ">=14"
   },
-  "bin": {
-    "generate-type-bundle": "./build/src/index.js"
-  },
+  "bin": "./build/src/index.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "yarn@3.2.2",
   "dependencies": {
-    "@polkadot/apps-config": "^0.118.1",
-    "@polkadot/types": "^8.14.1",
+    "@polkadot/apps-config": "^0.119.1",
+    "@polkadot/types": "^9.0.1",
     "yargs": "^17.5.1"
   },
   "devDependencies": {
