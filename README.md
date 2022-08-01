@@ -1,6 +1,6 @@
 ## Summary
 
-This package allows you generate a valid [OverrideTypesBundle]() JSON file to inject into a polkadot-js `ApiPromise` under the `typesBundle` option key. This is a helper library that works specifically with polkadot-js. 
+This package allows you generate a valid [OverrideTypesBundle](https://github.com/polkadot-js/api/blob/master/packages/types/src/types/registry.ts#L73-L76) JSON file to inject into a polkadot-js `ApiPromise` under the `typesBundle` option key. This is a helper library that works specifically with polkadot-js. It is important to note that this library extracts chain types that are available via [`apps-config`](https://github.com/polkadot-js/apps/tree/master/packages/apps-config), if the chain types dont exist there it wont be able to support to bundle you need. Example packages that use this implicitly leverage this library are [Substrate-api-sidecar](https://github.com/paritytech/substrate-api-sidecar), and [Txwrapper-core](https://github.com/paritytech/txwrapper-core).
 
 ## Installation
 
