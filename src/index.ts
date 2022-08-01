@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import * as apps from '@polkadot/apps-config/api';
 import type {
 	OverrideBundleDefinition,
