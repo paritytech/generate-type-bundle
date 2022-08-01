@@ -13,9 +13,7 @@ enum ExitCodes {
 }
 
 const writeJson = (path: string, data: OverrideBundleType): void => {
-	fs.writeFile(path, JSON.stringify(data, null, 2), (err) => {
-		if (err) throw err;
-	});
+	fs.writeFileSync(path, JSON.stringify(data, null, 2));
 };
 
 const availableChainTypes = (
@@ -95,7 +93,7 @@ const main = (): number => {
 	try {
 		path = setPath(args);
 	} catch (e) {
-		console.log(e)
+		console.log(e);
 		return Failure;
 	}
 	/**
