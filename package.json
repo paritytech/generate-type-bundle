@@ -6,7 +6,8 @@
   "scripts": {
     "build": "substrate-exec-rimraf build/ && substrate-exec-tsc && echo Build Finished",
     "start": "yarn build && node ./build/src/index.js",
-    "lint": "substrate-dev-run-lint",
+    "lint": "substrate-dev-run-lint --fix",
+    "lint:ci": "substrate-dev-run-lint",
     "deploy": "yarn build && npm publish"
   },
   "publishConfig": {
