@@ -27,10 +27,10 @@
   "packageManager": "yarn@3.2.2",
   "dependencies": {
     "@polkadot/apps-config": "^0.121.1",
-    "@polkadot/types": "^9.2.3",
+    "@polkadot/types": "^9.4.2",
     "yargs": "^17.5.1"
   },
   "devDependencies": {
-    "@substrate/dev": "^0.6.3"
+    "@substrate/dev": "^0.6.5"
   }
 }
