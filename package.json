@@ -27,7 +27,7 @@
   "packageManager": "yarn@3.2.2",
   "dependencies": {
     "@polkadot/apps-config": "^0.121.1",
-    "@polkadot/types": "^9.4.2",
+    "@polkadot/types": "^9.6.1",
     "yargs": "^17.5.1"
   },
   "devDependencies": {
