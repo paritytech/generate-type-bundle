@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.4](https://github.com/paritytech/generate-type-bundle/compare/v0.1.3...v0.1.4) (2022-12-08)
+
+## Chores
+
+- chore(deps): update polkadot-js deps ([0fc1c54](https://github.com/paritytech/generate-type-bundle/commit/0fc1c54aeaab76efb0a369bc33234fd792b8c88f))
+
 ## [0.1.3](https://github.com/paritytech/generate-type-bundle/compare/v0.1.2...v0.1.3) (2022-08-24)
 
 ## Chores
