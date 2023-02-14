@@ -31,7 +31,7 @@ Note: `-p` or `--path` is required.
 `-p` or `--path`:
 
 ```sh
-generate-type-bundle -p ~/Desktop/example/types
+generate-type-bundle -p "path-to-directory"
 ```
 
 Note: This flag is required. The CLI will not generate any types bundles without specifying a directory. 
@@ -41,7 +41,7 @@ Note: This flag is required. The CLI will not generate any types bundles without
 `-s` or `--specName`:
 
 ```sh
-generate-type-bundle -p ~/Desktop/example/types -s moonbeam
+generate-type-bundle -p "path-to-directory" -s moonbeam
 ```
 
 ## List Available Chains
