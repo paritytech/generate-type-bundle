@@ -26,8 +26,8 @@
   "license": "ISC",
   "packageManager": "yarn@3.6.2",
   "dependencies": {
-    "@polkadot/apps-config": "^0.125.1",
-    "@polkadot/types": "^10.2.2",
+    "@polkadot/apps-config": "^0.132.1",
+    "@polkadot/types": "^10.10.1",
     "yargs": "^17.5.1"
   },
   "devDependencies": {
