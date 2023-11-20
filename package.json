@@ -24,7 +24,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "yarn@4.0.1",
+  "packageManager": "yarn@4.0.2",
   "dependencies": {
     "@polkadot/apps-config": "^0.132.1",
     "@polkadot/types": "^10.10.1",
