@@ -21,15 +21,14 @@ jobs:
       - name: Checkout files
         uses: actions/checkout@v3
 
-      - name: Install Node v16
+      - name: Install Node v18
         uses: actions/setup-node@v3
         with:
           node-version: '18'
 
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
-        run: YARN_DIR=$(yarn config get cacheFolder)
-        run: echo "$YARN_DIR" >> $GITHUB_OUTPUT
+        run: echo "dir=$(yarn config get cacheFolder)" >> $GITHUB_OUTPUT
 
       - uses: actions/cache@v3
         id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
